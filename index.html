@@ -33,16 +33,17 @@
       <p class="par"> Free streaming for 1 month. <br>Spend quality time with friends, family and loved ones today
         <br>Feel the love.</p>
 
-        <button class="cn"><a href="#">SIGN UP</a></button>
+        <button class="cn"><a href="#">Login</a></button>
 
-        <div class="form">
-          <h2> Login Here</h2>
-          <input type="email" name="" placeholder="Enter Email Here">
-          <input type="password" name="" placeholder="Enter Password Here">
-          <button class="btnn"><a href="#">Login</a></button>
+        <div class="form" onsubmit="return setAction(this)">
+          <h2>Sign Up</h2>
+          <input type="text" name="" placeholder="Enter Full Name" required>
+          <input type="email" name="" placeholder="Enter Email Here" required>
+          <input type="password" name="" placeholder="Enter Password Here" required>
+          <button class="btnn" onclick=myFunction()>SUBMIT</button>
 
-          <p class="link">Don't have an account<br>
-          <a href="#">Sign up </a>here</a></p>
+          <p class="link">Do you have an account<br>
+          <a href="#">Login</a>here</a></p>
           <p class="liw" hidden>Log in with</p>
 
           
@@ -50,6 +51,11 @@
         </div>
     </div>
   </div>
-  <script></script>
+  <script>
+function myFunction() {
+  alert("Successful!");
+}
+
+  </script>
 </body>
 </html> 
